@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Youtube</title>
+
+    <style>
+ 
+.thumbnail{
+width: 100%;
+}
+body{
+  margin:0;
+  padding-top: 80px;
+  padding-left:96px;
+  margin-left: 20px;
+  padding-right: 24px;
+  background-color: (247, 247, 247);
+}
+
+.video-title{
+  margin-top:0;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  line-height:20px;
+  width:240px;
+}
+  .video-title:hover{
+    cursor: pointer;
+  }
+
+.video-author{
+  margin-bottom:0;
+  font-family:Arial;
+  font-size:12px;
+  color:grey;
+}
+
+.video-stats{
+  display:inline-block;
+  margin-top:0;
+  font-family:Arial;
+  font-size:12px;
+  color:grey;
+}
+
+.video-info-grid{
+  display:grid;
+  grid-template-columns:50px 1fr;
+}
+
+.profile-picture{
+  width:40px;
+  border-radius:50px;
+}
+
+  .profile-pictur{
+    cursor: pointer;
+  }
+
+.thumbnail-row{
+  margin-bottom:5px;
+  position: relative;
+
+}
+.video-preview-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  column-gap:12px;
+  row-gap:40px;
+  margin-top:15px;
+}
+
+.time{
+  background-color:black;
+  color:white;
+  font-size: 12px;
+  position: absolute;
+ bottom: 8px;
+ right: 5px;
+ border-radius: 2px;
+
+}
+
+  </style>
+  <link rel="stylesheet"  href="styles/header.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+  
+  </head>
+  <body>
+  <div class="header">
+
+     <div class="left-section">
+  <img class="hamburger-menu"  src="header-icons/hamburger-menu.svg">
+  <img class="youtube-logo"   src="header-icons/youtube-logo.svg">
+
+     </div>
+     <div class="middle-section">
+    <input class="search-bar" type="text" placeholder="search"> 
+    <button class="search-button">
+      <img class="search-icon" src="header-icons/search.svg">
+      <div class="tooltip" >search</div>
+    </button>
+    <button class="voice-search-button">
+      <img src="header-icons/voice-search-icon.svg">
+    </button>
+    
+    </div>
+   <div class="right-section">
+    <img class="creat" src="header-icons/upload.svg">
+    <img class="youtube" src="header-icons/youtube-apps.svg">
+    <div class="note1">
+<img class="notification" src="header-icons/notifications.svg">
+<div class="note2">3</div>
+    </div>
+    
+    <img class="channel" src="channel-pictures/my-channel.jpeg">
+   </div>
+      </div>
+      
+  <div class="side-bar">
+       <div class="sidebar-link">
+        <img class="home" src="side-bar icons/home.svg">
+        <div>home</div>
+       </div>
+       <div class="sidebar-link">
+        <img class="explore" src="side-bar icons/explore.svg">
+        <div>explore</div>
+       </div>
+       <div class="sidebar-link">
+        <img class="subscriptions" src="side-bar icons/subscriptions.svg">
+        <div>subscriptions</div>
+       </div>
+       <div class="sidebar-link">
+        <img class="originals" src="side-bar icons/originals.svg">
+        <div>original</div>
+       </div>
+       <div class="sidebar-link">
+        <img class="youtube" src="side-bar icons/youtube-music.svg">
+        <div>youtube</div>
+       </div>
+       <div class="sidebar-link">
+        <img class="library" src="side-bar icons/library.svg">
+        <div>library</div>
+       </div>
+        </div>
+  
+ <div class="video-preview-grid">
+<div class="video-preview">
+  <div class="thumbnail-row"> 
+    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY" target="blank">
+   <img class="thumbnail" src="images/thumbnail-1.webp">
+   <div class="time">15:20</div>
+              </a> 
+
+ </div>
+  <div class="video-info-grid">
+    <div class="channel-picture">
+   <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+
+    </div>
+    <div class="video-info">
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai
+</p>
+ <P class="video-author">
+  Marques Brownlee
+ </P>
+ <p class="video-stats">3.4M views &#183; 6 months ago 
+ </p>
+    </div>
+  </div>
+</div>
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-2.webp">
+ <div class="time">8:22</div>
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+
+
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+<div class="video-preview">
+  <div class="thumbnail-row">  
+<img class="thumbnail" src="images/thumbnail-3.webp">
+<div class="time">9:13</div>
+
+ </div>
+  <div class="video-info-grid">
+    <div class="channel-picture">
+   <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+
+    </div>
+    <div class="video-info">
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai
+</p>
+ <P class="video-author">
+  Marques Brownlee
+ </P>
+ <p class="video-stats">3.4M views &#183; 6 months ago 
+ </p>
+    </div>
+  </div>
+</div>
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-4.webp">
+ <div class="time">22:09</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div><div class="video-preview">
+  <div class="thumbnail-row">  
+<img class="thumbnail" src="images/thumbnail-5.webp">
+<div class="time">15:20</div>
+
+ </div>
+  <div class="video-info-grid">
+    <div class="channel-picture">
+   <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+
+    </div>
+    <div class="video-info">
+<p class="video-title">
+    Talking Tech and AI with Google CEO Sundar Pichai
+</p>
+ <P class="video-author">
+  Marques Brownlee
+ </P>
+ <p class="video-stats">3.4M views &#183; 6 months ago 
+ </p>
+    </div>
+  </div>
+</div>
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-6.webp">
+ <div class="time">14:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-7.webp">
+ <div class="time">15:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-7.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-8.webp">
+ <div class="time">15:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-8.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-9.webp">
+ <div class="time">15:20</div>
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-9.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-10.webp">
+ <div class="time">15:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-10.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div><div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-11.webp">
+ <div class="time">15:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-11.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+<div class="video-preview">
+<div class="thumbnail-row">
+ <img class="thumbnail"  src="images/thumbnail-12.webp">
+ <div class="time">15:20</div>
+
+</div>
+<div class="video-info-grid">
+  <div class="channel-picture">
+<img class="profile-picture" src="channel-pictures/channel-12.jpeg">
+  </div>
+  <div class="video-info">
+<p class="video-title">
+    Try Not To Laugh Challenge #9
+</p>
+ <P class="video-author">
+  Markiplier
+ </P>
+ <p class="video-stats">19M views &#183; 4 years ago 
+ </p>
+  </div>
+</div>
+</div>
+
+
+
+ </div>
+
+
+
+</body>
+</html>

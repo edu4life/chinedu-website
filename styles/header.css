@@ -1,0 +1,155 @@
+body{
+  padding-top: 55px;
+  padding-left: 80px;
+
+}
+
+.header{
+  height: 52px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  z-index: 100; 
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(221, 212, 212);
+
+}
+
+.hamburger-menu{
+  height:25px;
+  margin-right:20px;
+  margin-left:8px;
+  
+}
+.youtube-logo{
+  height:20px;
+}
+
+.search-button{
+height: 45px;
+width:49px;
+background-color:white;
+border-width:1px;
+border-style:solid;
+border-color:lightgrey;
+background-color: rgb(247, 247, 247);
+position: relative;
+
+}
+.search-button .tooltip{
+position:absolute;
+background-color: lightgray;
+color: white;
+padding-top: 4px;
+padding-bottom: 4px;
+padding-left: 4px;
+padding-right: 4px;
+border-radius: 2px;
+opacity:0;
+transition: 0.8s;
+pointer-events: none;
+}
+
+.search-button:hover .tooltip{
+
+  opacity: 1;
+}
+
+
+.voice-search-button{
+  height:46px;
+  width:40px;
+  border-style:none;
+  border-width:1px;
+  border-color:lightgrey;
+  border-radius:20px;
+  margin-left:12px;
+  background-color:rgb(247, 247, 247);
+}
+
+.search-bar{
+  flex: 1;
+  height: 39px;
+  padding-left: 10px;
+  border-color:lightgrey;
+  font-size: 16px;
+  border-style:solid;
+  border-radius: 1px;
+  box-shadow: inset 2px 4px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+}
+
+.search-icon{
+  height:25px;
+}
+.search-bar::placeholder{
+  font-size:18px;
+
+}
+
+.left-section{
+  display:flex;
+  align-items:center;
+}
+
+.middle-section{
+  flex:1;
+  margin-left:20px;
+  margin-right:25px;
+  max-width:500px;
+  display:flex;
+  align-items:center;
+  
+}
+
+.right-section{
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+flex-shrink: 0;
+
+}
+
+.creat{
+  height:24px;
+
+
+}
+
+.youtube{
+  height: 24px;
+}
+.notification{
+  height: 24px;
+  position: relative;
+
+}
+.note1{
+  position: relative;
+}
+
+.note2{
+  background-color: red;
+  color: white;
+  position: absolute;
+  top: 0;
+  right:0;
+  font-size:10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-right: 3px;
+  padding-left:3px;
+  border-radius: 30px;
+}
+.channel{
+  height: 34px;
+margin-right:20px;
+}
